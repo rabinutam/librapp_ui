@@ -7,7 +7,7 @@
         'ngRoute'
     ];
 
-    angular.module('funed', dependencies)
+    angular.module('librapp', dependencies)
         .controller('appController', function($rootScope) {
         })
 
