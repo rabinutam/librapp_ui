@@ -1,0 +1,34 @@
+<!doctype html>
+<html class="no-js" ng-app="librapp">
+
+    <head>
+	<meta charset="utf-8">
+	<title>Library Admin</title>
+
+	<!-- External Libraries-->
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-route/angular-route.min.js"></script>
+
+	<!-- Project Libraries-->
+	<link rel="stylesheet" href="style/app.css">
+	<script src="controllers/app.js"></script>
+	<script src="controllers/topnav.js"></script>
+
+	<script src="library/lib-main.module.js"></script>
+	<script src="library/lib-main.directive.js"></script>
+	<script src="library/lib-main.controller.js"></script>
+	<script src="library/lib-main.service.js"></script>
+
+    </head>
+
+    <body ng-controller="appController">
+        <div ng-include="'templates/_tov-nav.html'"></div>
+        <div ng-view class="container-fluid"></div>
+    </body>
+
+</html>
